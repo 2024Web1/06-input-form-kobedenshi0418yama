@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input.html</title>
+</head>
+
+<body>
+  <h4>0J01033 山口豪輝</h4>
+  氏名と年齢をinput.phpに送信する。<br>
+  <form method="POST" action="input.php">
+    <!--入力したデータを input.php にHTTPのプロトコルPOST を使って送信する。-->
+    
+    氏名：<input type="text" name="name"><br>
+    <!--氏名のテキストボックスに入力された値のパラメータ名（変数名）をnameとする。-->
+    
+    年齢：<input type="text" name="age"><br>
+    <!--年齢のテキストボックスに入力された値のパラメータ名（変数名）をageとする。-->
+    
+    <input type="submit" value="送信">
+    <!--ボタンに表示する値を「送信」とし、クリックすると10行目の<form>タグで定義した方法でデータを送信する。-->
+  </form>
+</body>
+
+</html>
